@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="center">
+      <img src="https://pokedexproject1.herokuapp.com/images/Pokedex.png">
+      
+    </div>
+    
+    
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
+  data(){
+    return{
+      
+    }
+  },
+  create(){
+    this.miMetodo()
+  },
+  methods:{
+    miMetodo(){
+      console.log("mi metodo");
+    }
   }
 }
 </script>
+
+<style scoped>
+ .center{
+  text-align: center;
+  margin: 1%;
+ }
+</style>
